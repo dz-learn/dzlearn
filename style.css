@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('https://iili.io/HofLWmu.png');
+    background-size: cover;
+}
+/* -------------------- navigation bar -----------------------*/
+#nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+}
+#logo {
+    height: 10vh;
+}
+#nav h1 {
+    color: white;
+    font-family: sans-serif;
+}
+
+/* ------------------- Ads -------------------------------------- */
+#ads {
+    width: 23vw;
+    height: 100vh;
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    border-left: solid 2px black;
+    background-color: black;
+    display: none;
+}
+
+/* -------------------- body ----------------------------------- */
+#body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#primary, #cem, #lycee {
+    background-color: rgb(255, 255, 255);
+    height: 65vh;
+    width: 33vw;
+    margin:25vh 2vw 0 2vw;
+    box-shadow: black 0px 5px 10px 2px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#primary a, #cem a, #lycee a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    padding: 2mm;
+    border-radius: 2mm;
+}
+#primary div, #cem div, #lycee div {
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px black solid;
+    width: 100%;
+    
+}
+#primary div:hover, #cem div:hover, #lycee div:hover {
+    background-color: #004AAD;
+    color: white;
+}
+#primary div:hover a, #cem div:hover a, #lycee div:hover a {
+    color: white;
+}
+.title {
+    color: #004AAD;
+    font-weight: bold;
+    font-size: larger;
+}
+.title:hover {
+    background-color: white !important;
+    color: #004AAD !important;
+}
+
+.img {
+    width: 21.6vw;
+}
+@media only screen and (max-width: 515px) {
+    #ads {
+        width: 100vw;
+        height: 10vh;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+    }
+    #primary, #cem, #lycee {
+        width: 33vw;
+    }
+}
